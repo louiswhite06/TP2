@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Ubuntu:ital,wght@1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+header {
+    color: white;
+    background-color: #1494ab;
+    height: 75.90vh;
+    padding:0 8.33vw;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1,
+h2 {
+    font-family: 'Ubuntu', serif;
+}
+h1,h2,h3 {margin-top: 0;}
+
+h1 {
+    font-size: 40px;
+    vertical-align: top;
+}
+
+h1,
+h3,
+header p {
+    line-height: 125%;
+}
+
+header p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+img { width: 100%;}
+
+header a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    width: 37.5%;
+    background-color: white;
+    display: block;
+    text-align: center;
+    padding: 11.5px 0;
+    border-radius: 5px;
+}
+
+header div:first-child {width: 33.33%;}
+header div:nth-child(2) {width: 41.66%;}
+
+@media (max-width: 768px) or (orientation: landscape) {
+header {
+    flex-direction: column;
+    height: auto;
+    padding: 40px;
+}
+
+header div:first-child, header div:nth-child(2) {width: 100%;}
+}
+
+
+
+footer {
+    color: white;
+    background-color: #1494ab;
+    height: 125px;
+    padding:0 38.33vw;
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
